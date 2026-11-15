@@ -56,6 +56,7 @@ p{margin:0}
 .topbar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:10px;padding-bottom:10px}
 .topbar a{color:#E8E5DE;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
 .topbar .links{display:flex;flex-wrap:wrap;gap:8px 28px}
+@media (max-width:700px){.topbar{display:none}.preview{font-size:12px}}
 header.site{background:var(--ink);position:sticky;top:0;z-index:50;border-bottom:1px solid #1b1b1e}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
@@ -63,11 +64,12 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .brand-name{font-family:'Anton',Impact,sans-serif;font-size:26px;letter-spacing:2px;color:#fff;line-height:1}
 .brand-sub{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--gold);margin-top:3px}
 nav.main{display:flex;align-items:center;gap:30px}
-nav.main a.nav{color:#E8E5DE;text-decoration:none;font-size:15px;font-weight:600;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a.nav{color:#E8E5DE;text-decoration:none;font-size:15px;font-weight:600;padding:6px 0;border-bottom:2px solid transparent;white-space:nowrap}
+nav.main .btn,.brand-name,.brand-sub{white-space:nowrap}
 nav.main a.nav:hover,nav.main a.nav.active{color:var(--gold);border-bottom-color:var(--gold)}
 nav.main .btn{min-height:48px;padding:0 22px;font-size:15px}
 .menu-btn{display:none;width:48px;height:48px;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:#fff;cursor:pointer}
-@media (max-width:1020px){
+@media (max-width:1180px){
   .menu-btn{display:flex}
   nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ink);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--pad) 20px;border-bottom:1px solid var(--line)}
   nav.main.open{display:flex}
