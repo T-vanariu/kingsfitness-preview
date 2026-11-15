@@ -10,4 +10,4 @@ Static HTML/CSS/JS, no build step.
 
 Search engines are blocked on purpose (`robots.txt`, `_headers`, `noindex` meta) because this is a client preview, not the live site.
 
-If the Pages project name is not `kingsfitness-preview`, update the `og:url` and `og:image` URLs in `index.html` so LinkedIn shows the right preview card.
+If the hosting URL changes, update the `og:url` and `og:image` URLs in `index.html` so LinkedIn shows the right preview card.
