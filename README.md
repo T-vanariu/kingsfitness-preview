@@ -3,10 +3,10 @@
 Design preview of the Kings Fitness (ElevateX Limited) website, Port Moresby.
 Static HTML/CSS/JS, no build step.
 
-## Hosting (Cloudflare Pages)
-- Framework preset: None
-- Build command: (leave empty)
-- Build output directory: `/`
+## Hosting (Cloudflare Workers)
+- Repo connected in Workers & Pages > Settings > Builds
+- Build command: (none)
+- Deploy command: `npx wrangler deploy` (uses `wrangler.jsonc`, static assets only)
 
 Search engines are blocked on purpose (`robots.txt`, `_headers`, `noindex` meta) because this is a client preview, not the live site.
 
